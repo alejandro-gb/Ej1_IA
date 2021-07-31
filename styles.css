@@ -4,7 +4,86 @@ body {
 
 header {
     padding: 1rem;
-    background-color: darkolivegreen;
     margin: 0;
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    height: 5%;
+    margin-top:auto; 
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    min-height: calc(100vh - 400px);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.container {
+    display: flex;
+}
+
+.item {
+    text-align: center;
+    width: 33.3%;
+    height: 275px;
+    margin: auto;
+}
+
+.room {
+    width: 40%;
+    height: 20rem;
+    margin: auto;
+}
+
+.color1{
+    background-color: #e07a5f;
+}
+
+.color2 {
+    background-color: #81b29a;
+}
+
+.color3 {
+    background-color: #f2cc8f;
+}
+
+.color4 {
+    background-color: #f4f1de;
+}
+
+.color5 {
+    background-color: #3d405b;
+    color: white;
+}
+
+.sucio {
+    background-color: #4d2e00;
+}
+
+.limpio {
+    background-color: darkgreen;
+}
+
+.invisible {
+    display: none;
 }

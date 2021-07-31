@@ -7,15 +7,46 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
 </head>
-<body>
-    <header>
+<body >
+    <header class="color5">
         <h1>Reflex Agent</h1>
     </header>
-    <section>
-        <div>
-            <p id="log"></p>
+    <section class="container">
+        <div class="item color1">
+            <p><strong>Estados</strong></p>
+            <pre><strong>1. </strong> Aspiradora en A: <span class="tachado"> Habitacion A </span>  <span class="tachado"> Habitacion B </span></pre>
+            <pre><strong>2. </strong>Aspiradora en A: <span class="tachado"> Habitacion A </span>   Habitacion B </pre>
+            <pre><strong>3. </strong>Aspiradora en A:  Habitacion A   <span class="tachado"> Habitacion B </span></pre>
+            <pre><strong>4. </strong>Aspiradora en A:  Habitacion A    Habitacion B </pre>
+            <pre><strong>5. </strong>Aspiradora en B: <span class="tachado"> Habitacion A </span>  <span class="tachado"> Habitacion B </span></pre>
+            <pre><strong>6. </strong>Aspiradora en B: <span class="tachado"> Habitacion A </span>   Habitacion B </pre>
+            <pre><strong>7. </strong>Aspiradora en B:  Habitacion A   <span class="tachado"> Habitacion B </span></pre>
+            <pre><strong>8. </strong>Aspiradora en B:  Habitacion A    Habitacion B </pre>
+        </div>
+        <div class="item color2">
+            <h1>Estado Actual</h1>
+            <h1 id="actual"></h1>
+        </div>
+        <div class="item color3">
+            <h1>Visitas por estado</h1>
+            <pre>   1    2    3    4    5    6    7    8 </pre>
+            <pre>   [<span id="1"></span>]  [<span id="2"></span>]  [<span id="3"></span>]  [<span id="4"></span>]  [<span id="5"></span>]  [<span id="6"></span>]  [<span id="7"></span>]  [<span id="8"></span>]</pre>
         </div>
     </section>
+    <main class="container color4">
+        <div id="A" class="room color5">
+            <h1>Habitacion A</h1>
+            <img id="imgA" src="http://electroluxpe.vteximg.com.br/arquivos/ids/157096/EQP20-1000x1000-5.png?v=637419354018000000" alt="aspiradora">
+        </div>
+        <div id="B" class="room color5">
+            <h1>Habitacion B</h1>
+            <img id="imgB" src="http://electroluxpe.vteximg.com.br/arquivos/ids/157096/EQP20-1000x1000-5.png?v=637419354018000000" alt="aspiradora">
+        </div>
+    </main>
+    <footer class="color5">
+        <p>Alejandro Garcia <strong>201700801</strong></p>
+        
+    </footer>
 </body>
 <script src='main.js'></script>
 </html>
