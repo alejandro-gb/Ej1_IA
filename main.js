@@ -78,6 +78,25 @@ function contador(num){
   }
 }
 
+function ensuciar() {
+  let tipo = Math.floor(Math.random() * 3)
+  if(tipo == 0){
+    states[1] = "DIRTY"
+  }else if(tipo == 1){
+    states[2] = "DIRTY"
+  }else{
+    states[1] = "DIRTY"
+    states[2] = "DIRTY"
+  }
+}
+
+function stop() {
+  if(estado1 >= 2 && estado2 >= 2 && estado3 >= 2 && estado4 >= 2 && estado5 >= 2 && estado6 >= 2 && estado7 >= 2 && estado8 >= 2){
+    return true
+  }
+  return false
+}
+
 function test(states){
        var location = states[0];
        if(location == "A"){
@@ -102,8 +121,14 @@ function test(states){
           };
        }
        else if (action_result == "RIGHT") states[0] = "B";
-       else if (action_result == "LEFT") states[0] = "A";		
- setTimeout(function(){ test(states); }, 5000);
+       else if (action_result == "LEFT") states[0] = "A";
+
+       if(stop()){
+         clearInterval(interval)
+         document.getElementById("actual").innerHTML = "Finalizado"
+       }else{
+        setTimeout(function(){ test(states); }, 2000);
+       }
 }
 
 var states = ["A","DIRTY","DIRTY"];
@@ -116,3 +141,6 @@ var estado6 = 0
 var estado7 = 0
 var estado8 = 0
 test(states);
+var interval = setInterval(() => {
+  ensuciar()
+}, 5000);

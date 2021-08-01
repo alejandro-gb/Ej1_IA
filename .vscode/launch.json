@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "c:\\Users\\Alejandro Garcia\\Desktop\\UNIVERSIDAD\\SEGUNDO SEMESTRE 21\\INTELIGENCIA ARTIFICIAL\\Ej1_IA",
+      "environment": [],
+      "program": "c:\\Users\\Alejandro Garcia\\Desktop\\UNIVERSIDAD\\SEGUNDO SEMESTRE 21\\INTELIGENCIA ARTIFICIAL\\Ej1_IA\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false
+    }
+  ]
+}
